@@ -18,20 +18,6 @@ First, we have the markdown variants:
 
 ###### markdown h6
 
-Second, we have the HTML variants:
-
-<h1>HTML h1</h1>
-
-<h2>HTML h2</h2>
-
-<h3>HTML h3</h3>
-
-<h4>HTML h4</h4>
-
-<h5>HTML h5</h5>
-
-<h6>HTML h6</h6>
-
 
 **Horizontal Rule**
 
@@ -39,20 +25,12 @@ First, we have the markdown variants:
 
 ---
 
-Second, we have the HTML variants:
-
-<hr />
-
 
 **Images**
 
 First, we have the markdown variants:
 
 ![Animated image of a cat playing bongos](https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7)
-
-Second, we have the HTML variants:
-
-<img alt="Animated image of a cat playing bongos" src="https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7" />
 
 
 **Links**
@@ -62,12 +40,6 @@ First, we have the markdown variants:
 [this is pure text](http://example.com)
 
 [![Animated image of a cat playing bongos](https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7)](http://example.com)
-
-Second, we have the HTML variants:
-
-<a href="http://example.com">this is pure text</a>
-
-<a href="http://example.com"><img alt="Animated image of a cat playing bongos" src="https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7" /></a>
 
 
 **Code**
@@ -105,39 +77,8 @@ this is just a code fence without a language applied.
 this really shouldn't do anything exciting from a rendering perspective
 ```
 
-Second, we have the HTML variants:
 
-<code>gh api "/user"</code>
-
-<pre>
-QUERY='
-query($endCursor: String){
-  organization(login:"actions"){
-    repositories(first:100, after:$endCursor){
-      pageInfo{
-        endCursor
-        hasNextPage
-      }
-      nodes{
-        name
-        issues(states:OPEN){
-          totalCount
-        }
-      }
-    }
-  }
-}
-'
-
-gh api graphql -F query="$QUERY" --paginate --slurp | jq '[ .[].data.organization.repositories.nodes[].issues.totalCount ] | add'
-</pre>
-
-<pre>
-this is just a code fence without a language applied.
-
-this really shouldn't do anything exciting from a rendering perspective
-</pre>
-
+**Quotes**
 
 > [!NOTE]
 > Duplicating markdown code blocks in HTML is not completely possible because GitHub HTML rendering would strip the necessary CSS styles to colorize specific text.
@@ -163,3 +104,16 @@ this really shouldn't do anything exciting from a rendering perspective
 >   -o, --output-file <span class="pl-k">&lt;</span>output-file<span class="pl-k">&gt;</span>     Name of GitHub montage file to generate, without <span class="pl-s"><span class="pl-pds">'</span>.jpg<span class="pl-pds">'</span></span> extension
 >   -p, --preserve                      Preserve temporary directory containing data</pre>
 > ```
+
+
+**Tables**
+
+| Avatar | Name | Role | Handle
+| ------ | ---- | ---- | ------
+| ![@williammartin](https://avatars.githubusercontent.com/williammartin?s=80) | William | Engineering | [@williammartin](https://github.com/williammartin)
+| ![@andyfeller](https://avatars.githubusercontent.com/andyfeller?s=80) | Andy | Engineering | [@andyfeller](https://github.com/andyfeller)
+| ![@mxie](https://avatars.githubusercontent.com/mxie?s=80) | Melissa | Engineering | [@mxie](https://github.com/mxie)
+| ![@jtmcg](https://avatars.githubusercontent.com/jtmcg?s=80) | Tyler | Engineering | [@jtmcg](https://github.com/jtmcg)
+| ![@bagtoad](https://avatars.githubusercontent.com/bagtoad?s=80) | Kynan | Engineering | [@bagtoad](https://github.com/bagtoad)
+| ![@ryanhecht](https://avatars.githubusercontent.com/ryanhecht?s=80) | Ryan | Product | [@ryanhecht](https://github.com/ryanhecht)
+
