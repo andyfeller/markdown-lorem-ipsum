@@ -120,3 +120,8 @@ this really shouldn't do anything exciting from a rendering perspective
 | ![@bagtoad](https://avatars.githubusercontent.com/bagtoad?s=80) | Kynan | Engineering | [@bagtoad](https://github.com/bagtoad)
 | ![@ryanhecht](https://avatars.githubusercontent.com/ryanhecht?s=80) | Ryan | Product | [@ryanhecht](https://github.com/ryanhecht)
 
+
+**Lists**
+
+- [ ] Incomplete checkbox
+- [x] Complete checkbox
