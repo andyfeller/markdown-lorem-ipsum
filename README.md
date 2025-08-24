@@ -32,6 +32,8 @@ First, we have the markdown variants:
 
 ![Animated image of a cat playing bongos](https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7)
 
+![](https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7)
+
 
 **Links**
 
@@ -41,6 +43,7 @@ First, we have the markdown variants:
 
 [![Animated image of a cat playing bongos](https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7)](http://example.com)
 
+[![](https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7)](http://example.com)
 
 **Code**
 
