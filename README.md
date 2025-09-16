@@ -1,6 +1,6 @@
 # markdown-lorem-ipsum
 
-This is a GitHub repository whose profile contains markdown elements and text to use for testing whether markdown rendering is accessible or not.  The content and markdown elements are based upon the `light` and `dark` styles of [`charmbracelet/glamour` module](https://github.com/charmbracelet/glamour).
+This is a GitHub repository whose profile contains markdown elements and text to use for testing whether markdown rendering is accessible or not. The content and markdown elements are based upon the `light` and `dark` styles of [`charmbracelet/glamour` module](https://github.com/charmbracelet/glamour).
 
 **Headers**
 
@@ -18,13 +18,11 @@ First, we have the markdown variants:
 
 ###### markdown h6
 
-
 **Horizontal Rule**
 
 First, we have the markdown variants:
 
 ---
-
 
 **Images**
 
@@ -33,7 +31,6 @@ First, we have the markdown variants:
 ![Animated image of a cat playing bongos](https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7)
 
 ![](https://github.com/user-attachments/assets/a9931645-5f9b-4ccc-bf4b-52390b00c4a7)
-
 
 **Links**
 
@@ -80,7 +77,6 @@ this is just a code fence without a language applied.
 this really shouldn't do anything exciting from a rendering perspective
 ```
 
-
 **Quotes**
 
 > [!NOTE]
@@ -90,14 +86,14 @@ this really shouldn't do anything exciting from a rendering perspective
 >
 > ```html
 > <pre>$ gh montage --help
->
+> 
 > Generate montage from GitHub user avatars.
->
+> 
 > USAGE
 >   gh montage [options] <span class="pl-k">&lt;</span>organization<span class="pl-k">&gt;</span>
 >   gh montage [options] <span class="pl-k">&lt;</span>organization<span class="pl-k">&gt;</span>/<span class="pl-k">&lt;</span>team<span class="pl-k">&gt;</span>
 >   gh montage [options] <span class="pl-k">&lt;</span>path/to/username file<span class="pl-k">&gt;</span>
->
+> 
 > FLAGS
 >   -a, --avatar-pixels <span class="pl-k">&lt;</span>integer<span class="pl-k">&gt;</span>       Size of GitHub avatar icons <span class="pl-k">in</span> pixels<span class="pl-k">;</span> default <span class="pl-s"><span class="pl-pds">'</span>48<span class="pl-pds">'</span></span>
 >   -d, --debug                         Enable debugging
@@ -108,20 +104,30 @@ this really shouldn't do anything exciting from a rendering perspective
 >   -p, --preserve                      Preserve temporary directory containing data</pre>
 > ```
 
-
 **Tables**
 
-| Avatar | Name | Role | Handle
-| ------ | ---- | ---- | ------
-| ![@williammartin](https://avatars.githubusercontent.com/williammartin?s=80) | William | Engineering | [@williammartin](https://github.com/williammartin)
-| ![@andyfeller](https://avatars.githubusercontent.com/andyfeller?s=80) | Andy | Engineering | [@andyfeller](https://github.com/andyfeller)
-| ![@mxie](https://avatars.githubusercontent.com/mxie?s=80) | Melissa | Engineering | [@mxie](https://github.com/mxie)
-| ![@jtmcg](https://avatars.githubusercontent.com/jtmcg?s=80) | Tyler | Engineering | [@jtmcg](https://github.com/jtmcg)
-| ![@bagtoad](https://avatars.githubusercontent.com/bagtoad?s=80) | Kynan | Engineering | [@bagtoad](https://github.com/bagtoad)
-| ![@ryanhecht](https://avatars.githubusercontent.com/ryanhecht?s=80) | Ryan | Product | [@ryanhecht](https://github.com/ryanhecht)
-
+| Avatar                                                                      | Name    | Role        | Handle                                             |
+| --------------------------------------------------------------------------- | ------- | ----------- | -------------------------------------------------- |
+| ![@williammartin](https://avatars.githubusercontent.com/williammartin?s=80) | William | Engineering | [@williammartin](https://github.com/williammartin) |
+| ![@andyfeller](https://avatars.githubusercontent.com/andyfeller?s=80)       | Andy    | Engineering | [@andyfeller](https://github.com/andyfeller)       |
+| ![@mxie](https://avatars.githubusercontent.com/mxie?s=80)                   | Melissa | Engineering | [@mxie](https://github.com/mxie)                   |
+| ![@jtmcg](https://avatars.githubusercontent.com/jtmcg?s=80)                 | Tyler   | Engineering | [@jtmcg](https://github.com/jtmcg)                 |
+| ![@bagtoad](https://avatars.githubusercontent.com/bagtoad?s=80)             | Kynan   | Engineering | [@bagtoad](https://github.com/bagtoad)             |
+| ![@ryanhecht](https://avatars.githubusercontent.com/ryanhecht?s=80)         | Ryan    | Product     | [@ryanhecht](https://github.com/ryanhecht)         |
 
 **Lists**
 
 - [ ] Incomplete checkbox
 - [x] Complete checkbox
+
+1. **First item:** making sure nested bold is rendered correctly in ordered lists
+2. _Second item:_ making sure nested italics is rendered correctly in ordered lists
+3. _**Third item:**_ making sure multiple nested modifiers are rendered correctly in ordered lists
+4. `Fourth item:` making sure in-line code fencing is rendered correctly in ordered lists
+5. ~Fifth item:~ making sure strikethrough is rendered correctly in ordered lists
+
+- **First item:** making sure nested bold is rendered correctly in unordered lists
+- _Second item:_ making sure nested italics is rendered correctly in unordered lists
+- _**Third item:**_ making sure multiple nested modifiers are rendered correctly in unordered lists
+- `Fourth item:` making sure in-line code fencing is rendered correctly in unordered lists
+- ~Fifth item:~ making sure strikethrough is rendered correctly in unordered lists
